@@ -4,29 +4,13 @@
   <div class="sidebar-right-content nano-content">
 
     <div class="tab-block sidebar-block br-n">
-      <ul class="nav nav-tabs tabs-border nav-justified hidden">
-        <li class="active">
-          <a href="pages_blank.html#sidebar-right-tab1" data-toggle="tab">Tab 1</a>
-        </li>
-        <li>
-          <a href="pages_blank.html#sidebar-right-tab2" data-toggle="tab">Tab 2</a>
-        </li>
-        <li>
-          <a href="pages_blank.html#sidebar-right-tab3" data-toggle="tab">Tab 3</a>
-        </li>
-      </ul>
+
       <div class="tab-content br-n">
         <div id="sidebar-right-tab1" class="tab-pane active">
 
-          <h5 class="title-divider text-muted mb20"> Server Statistics
-            <span class="pull-right"> 2013
-              <i class="fa fa-caret-down ml5"></i>
-            </span>
-          </h5>
-          <div class="progress mh5">
-            <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 44%">
-              <span class="fs11">DB Request</span>
-            </div>
+          
+          <div class="form-group">
+          <input type="text" class="form-control" name="" value="">
           </div>
           <div class="progress mh5">
             <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 84%">

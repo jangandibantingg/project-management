@@ -84,7 +84,11 @@ if (mysqli_num_rows($query) != null) {
 }
 
 }
+//
 
-
+function numberpost($number){
+$result=preg_replace("/[^a-zA-Z0-9]/", "",$number);
+return $result;
+}
 
  ?>

@@ -7,6 +7,7 @@ RewriteRule ^signup\.html$ control/post_signup.php?page=$1 [L]
 RewriteRule ^signin\.html$ control/post_signin.php?page=$1 [L]
 RewriteRule ^logout\.html$ control/logout.php?page=$1 [L]
 RewriteRule ^proses\.html$ control/proses.php?page=$1 [L]
+RewriteRule ^add-project\.html$ control/add-project.php?page=$1 [L]
 
 
 Options All -Indexes

@@ -56,37 +56,8 @@ include 'view/body.head.php';
       <!-- Begin: Content -->
       <section id="content" class="table-layout animated fadeIn">
 
+        <?php include 'content.php';; ?>
 
-                                <?php
-                                if (file_exists("view/$page.php")) {
-                                      require "view/$page.php";
-                                  }elseif($page == '' ){
-                                     require "view/beranda.php";
-                                  }else {
-
-                                    if ($member['level'] == 'akun') {
-                                      echo "<script type='text/javascript'> window.location.href = './penjualan.aspx' </script>";
-                                    }
-                                      echo '
-                                      <div class="col-md-8">
-
-
-                                      <div class="panel panel-danger">
-  <div class="panel-heading">
-    <span class="panel-title">Halaman ini dalam Proses pengembangan</span>
-    <div class="widget-menu pull-right">
-      <code class="mr10 bg-primary dark p3 ph5">404</code>
-    </div>
-  </div>
-  <div class="panel-body">
-  <p class="text-left"> © 2019  <i class="fa fa-code"></i> <a href="https://www.cloudflare.com/" target="_blank"> <b> <i class="icon-cup"></i> Developer </b> </a></p>
-  </div>
-</div></div>
-                                      ';
-                                  }
-
-
-                                ?>
 
       </section>
       <!-- End: Content -->
@@ -100,11 +71,87 @@ include 'view/body.head.php';
   </div>
   <!-- End: Main -->
 
+
+ <!-- modal add project -->
+ <!--  -->
+ <div class="modal fade" id="addproject" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Add New Project</h4>
+        </div>
+        <div class="modal-body">
+          <form id="form" action="add-project.html" method="post"  >
+              <div class="form-group">
+                  <small>Project Name</small>
+                  <input type="text" class="form-control" name="project_name" placeholder="Project Name" value="">
+              </div>
+              <div class="form-group">
+
+                  <input type="hidden" class="form-control" name="create_at" placeholder="project name" value="<?php echo "$date"; ?>">
+              </div>
+              <div class="form-group">
+                <small>Salary</small>
+                  <input type="text" class="form-control money" id="money" name="salary" placeholder="amount due " value="">
+              </div>
+              <div class="form-group">
+                  <input type="hidden" class="form-control" name="email" placeholder="project name" value="<?php echo "$member[email]"; ?>">
+              </div>
+              <div class="form-group">
+                  <small>Finish Date</small>
+                  <input type="date" class="form-control" name="finish_date" placeholder="finish date" value="">
+
+              </div>
+              <div class="form-group">
+                <small>Client / marketer</small>
+                  <input type="text" class="form-control" name="project_by" placeholder="project by" value="">
+              </div>
+
+              <div class="form-group">
+                  <small>Priority</small>
+                <select class="form-control" name="priority">
+                    <option value=""> priority </option>
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+
+                </select>
+              </div>
+              <div class="form-group">
+                <small>File Project</small>
+                  <input type="text" class="form-control" name="file" placeholder="file project link " value="">
+              </div>
+              <div class="form-group">
+                <small id="info">succees</small>
+
+              </div>
+
+        </div>
+        <div class="modal-footer">
+          <button id="submitform" class="btn btn-info" >Save</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </form>
+        </div>
+
+      </div>
+  </form>
+    </div>
+  </div>
+ <!--  -->
+
+
   <!-- BEGIN: PAGE SCRIPTS -->
+
+
 
   <!-- jQuery -->
   <script src="library/vendor/jquery/jquery-1.11.1.min.js"></script>
   <script src="library/vendor/jquery/jquery_ui/jquery-ui.min.js"></script>
+  <script src="ajax/form.js"></script>
+
 
   <!-- Tagmanager JS -->
   <script src="library/vendor/plugins/tagsinput/tagsinput.min.js"></script>
@@ -126,7 +173,9 @@ include 'view/body.head.php';
   });
   </script>
   <!-- END: PAGE SCRIPTS -->
-
+  <!-- <script src="https://yandex.st/highlightjs/7.3/highlight.min.js"></script> -->
+   <script type="text/javascript" src="ajax/jquery.mask.min.js"></script>
+   <script type="text/javascript" src="ajax/inputmask.js"></script>
 </body>
 
 </html>

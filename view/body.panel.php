@@ -9,13 +9,13 @@
       <div class="panel-body pn">
         <ul class="nav nav-list nav-list-sm pl15 pt10" role="tablist">
           <li class="active">
-            <a href="pages_blank.html#toolbox-header" role="tab" data-toggle="tab">Navbar</a>
+            <a href="#toolbox-header" role="tab" data-toggle="tab">Navbar</a>
           </li>
           <li>
-            <a href="pages_blank.html#toolbox-sidebar" role="tab" data-toggle="tab">Sidebar</a>
+            <a href="#toolbox-sidebar" role="tab" data-toggle="tab">Sidebar</a>
           </li>
           <li>
-            <a href="pages_blank.html#toolbox-settings" role="tab" data-toggle="tab">Misc</a>
+            <a href="#toolbox-settings" role="tab" data-toggle="tab">Misc</a>
           </li>
         </ul>
         <div class="tab-content p20 ptn pb15">
@@ -127,7 +127,7 @@
           </div>
         </div>
         <div class="form-group mn br-t p15">
-          <a href="pages_blank.html#" id="clearLocalStorage" class="btn btn-primary btn-block pb10 pt10">Clear LocalStorage</a>
+          <a href="#" id="clearLocalStorage" class="btn btn-primary btn-block pb10 pt10">Clear LocalStorage</a>
         </div>
       </div>
     </div>

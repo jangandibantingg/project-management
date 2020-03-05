@@ -4,10 +4,7 @@
 
  <ul class="nav nav-list nav-list-topbar pull-left">
 
-        <li >
-          <a href="list.aspx">
-            <span class="imoon imoon-copy2"></span> List </a>
-        </li>
+
         <li>
           <a href="board.aspx">
             <span class="imoon imoon-notebook"></span> Board </a>
@@ -31,14 +28,10 @@
   </div>
   <!-- hidden-xs hidden-sm -->
   <div class="topbar-right ">
-           <a href="#" class="btn btn-default btn-sm light fw600 ml10"  id="toggle_sidemenu_r">
-              <span class="imoon imoon-calendar pr5"></span> Add Scedule </a>
-            
-    <!-- <div class="ml15 ib va-m" id="toggle_sidemenu_r">
-      <a href="#" class="pl5">
-        <i class="fa fa-sign-in fs22 text-primary"></i>
-        <span class="badge badge-hero badge-danger">3</span>
-      </a>
-    </div> -->
+           <!-- <a href="#" class="btn btn-default btn-sm light fw600 ml10"  id="toggle_sidemenu_r"> -->
+           <a href="#" class="btn btn-default btn-sm light fw600 ml10"data-toggle="modal" data-target="#addproject"> <span class="imoon imoon-calendar pr5"></span> + Add project
+           </a>
+
+
   </div>
 </header>
