@@ -5,9 +5,6 @@ if (file_exists("view/$page.php")) {
      require "view/beranda.php";
   }else {
 
-    if ($member['level'] == 'akun') {
-      echo "<script type='text/javascript'> window.location.href = './penjualan.aspx' </script>";
-    }
       echo '
       <div class="col-md-8">
 

@@ -5,7 +5,7 @@ require_once "control/User.php";
 require_once "control/connect.php";
 require_once "control/uploadfile.php";
 require_once "control/function.php";
-require_once "control/get_mobile.php";
+// require_once "control/get_mobile.php";
 
 
 
@@ -37,8 +37,6 @@ if(!$user->isLoggedIn()){
     include 'view/gate.php';
 }elseif($member['level'] == 'kasir') {
     include 'cashier/body.php';
-}elseif(mobile_detect() == true){
-    include 'view/body.php';
 }else {
   include 'view/body.php';
 }

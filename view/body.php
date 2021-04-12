@@ -174,8 +174,8 @@ include 'view/body.head.php';
   </script>
   <!-- END: PAGE SCRIPTS -->
   <!-- <script src="https://yandex.st/highlightjs/7.3/highlight.min.js"></script> -->
-   <script type="text/javascript" src="ajax/jquery.mask.min.js"></script>
-   <script type="text/javascript" src="ajax/inputmask.js"></script>
+   <!-- <script type="text/javascript" src="ajax/jquery.mask.min.js"></script> -->
+   <!-- <script type="text/javascript" src="ajax/inputmask.js"></script> -->
 </body>
 
 </html>
